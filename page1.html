@@ -39,7 +39,7 @@
             <div class="menu-logo">
                 <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="https://www.uni-frankfurt.de/de?locale=de" target="_blank">
+                    <a href="https://www.uni-frankfurt.de/de?locale=de" target="_blank" class="navbar-logo-link">
                         <img src="assets/images/gu-logo-weiss.png" alt="Mobirise"  style="height: 3.8rem;">
                     </a>
                 </span>
@@ -94,10 +94,10 @@ function myFunction() {
 $(function () { 
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 1000) { 
-                    $('.navbar-logo img').attr('src','assets/images/combined_logo.png');
+                    $('.navbar-logo-link img').attr('src','assets/images/combined_logo.png');
                 }
                 if ($(this).scrollTop() < 1000) { 
-                    $('.navbar-logo img').attr('src','assets/images/combined_logo_blue.png');
+                    $('.navbar-logo-link img').attr('src','assets/images/combined_logo_blue.png');
                 }
             })
         });
