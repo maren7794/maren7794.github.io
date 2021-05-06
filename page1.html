@@ -40,7 +40,7 @@
                 <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="https://www.uni-frankfurt.de/de?locale=de" target="_blank">
-                        <img src="assets/images/gu-logo-weiss.png" alt="Mobirise" style="height: 3.8rem;">
+                        <img src="assets/images/gu-logo-weiss.png" alt="Mobirise"  style="height: 3.8rem;">
                     </a>
                 </span>
                     
@@ -56,14 +56,8 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown js-float-line nav-right" data-app-modern-menu="true"><li class="nav-item">
-                        <a class="nav-link link mbr-black text-secondary display-4" href="index.html">Home&nbsp; &nbsp; &nbsp; &nbsp;</a>
-                    </li><li class="nav-item dropdown"><a class="nav-link link mbr-black dropdown-toggle text-secondary display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">Research&nbsp; &nbsp; &nbsp;&nbsp;</a><div class="dropdown-menu"><a class="mbr-black dropdown-item text-secondary display-4" href="page1.html">About us</a><a class="mbr-black dropdown-item text-secondary display-4" href="page2.html">Biomedicine</a><a class="mbr-black dropdown-item text-secondary display-4" href="page3.html">Finance</a></div></li><li class="nav-item"><a class="nav-link link mbr-black text-secondary display-4" href="page4.html">Contact&nbsp; &nbsp; &nbsp;</a></li><li class="nav-item"><a class="nav-link link mbr-black text-secondary text-primary display-4" href="https://hessenbox-a10.rz.uni-frankfurt.de/getlink/fi83vCMj7RjVoHuAKApnuoV5/" target="_blank">Internal</a></li><li class="nav-item"><a class="nav-link link mbr-black text-secondary text-primary display-4" href="https://hessenbox-a10.rz.uni-frankfurt.de/getlink/fi83vCMj7RjVoHuAKApnuoV5/" target="_blank">Internal</a></li></ul>
-                
-                <span class="navbar-logo">
-                    <a href="https://www.uni-frankfurt.de/de?locale=de" target="_blank">
-                        <img src="assets/images/white-sftg-removebg-preview-1.png" alt="Mobirise" style="height: 3.8rem;">
-                    </a>
-                </span>
+                        <a class="nav-link link mbr-black text-secondary display-4" href="index.html">Home</a>
+                    </li><li class="nav-item dropdown"><a class="nav-link link mbr-black dropdown-toggle text-secondary display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">Research</a><div class="dropdown-menu"><a class="mbr-black dropdown-item text-secondary display-4" href="page1.html">About us</a><a class="mbr-black dropdown-item text-secondary display-4" href="page2.html">Biomedicine</a><a class="mbr-black dropdown-item text-secondary display-4" href="page3.html">Finance</a></div></li><li class="nav-item"><a class="nav-link link mbr-black text-secondary display-4" href="page4.html">Contact</a></li><li class="nav-item"><a class="nav-link link mbr-black text-secondary text-primary display-4" href="https://hessenbox-a10.rz.uni-frankfurt.de/getlink/fi83vCMj7RjVoHuAKApnuoV5/" target="_blank">Internal</a></li>
             </div>
         </div>
     </nav>
@@ -97,6 +91,16 @@ function myFunction() {
   
   
 }
+$(function () { 
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 1000) { 
+                    $('.navbar-logo img').attr('src','assets/images/combined_logo.png');
+                }
+                if ($(this).scrollTop() < 1000) { 
+                    $('.navbar-logo img').attr('src','assets/images/combined_logo_blue.png');
+                }
+            })
+        });
  
         
 </script>
